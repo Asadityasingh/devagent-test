@@ -1,1 +1,1 @@
-# Config fixed - memory ready
+# Config fixed - memory readywith LTM/STM
