@@ -31,7 +31,8 @@ cursor.execute(query, (username, password))
 def get_data():
     # MEDIUM: No input validation on query param
     user_id = request.args.get('id')
-    query = f"SELECT data FROM sensitive_table WHERE id={user_id}"  # Another injection risk
+    query = "SELECT data FROM sensitive_table WHERE id=%s"
+cursor.execute(query, (user_id,))  # Another injection risk
     
     # Simulate
     return {'data': f"User {user_id} info"}
