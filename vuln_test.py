@@ -1,5 +1,4 @@
 def user_login(user_id):
-    # SQL Injection
     query = f"SELECT * FROM users WHERE id = '{user_id}'"
     return db.execute(query)
 
