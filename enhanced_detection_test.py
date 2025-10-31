@@ -47,3 +47,4 @@ def save_post(title):
     post.created = datetime.now()
     db.save(post)
     return post
+# Final enhanced detection
