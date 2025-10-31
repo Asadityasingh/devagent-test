@@ -48,3 +48,4 @@ def save_post(title):
     db.save(post)
     return post
 # Final enhanced detection
+# Fixed: All detections
