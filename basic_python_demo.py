@@ -7,7 +7,7 @@ c=[1,2,3,4,5]
 d={"k":3}
 e=True
 f=False
-def p(t):print(t)
+def print_value(t):print(t)
 p(a)
 p(b)
 for i in range(5):
