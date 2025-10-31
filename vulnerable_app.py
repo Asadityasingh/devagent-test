@@ -15,7 +15,8 @@ def login():
     password = request.form.get('password')
     
     # CRITICAL: SQL injection - direct string concat
-    query = f"SELECT * FROM users WHERE username='{username}' AND password='{password}'"
+    query = "SELECT * FROM users WHERE username=%s AND password=%s"
+cursor.execute(query, (username, password))
     
     # Simulate execution
     conn = get_db_connection()
