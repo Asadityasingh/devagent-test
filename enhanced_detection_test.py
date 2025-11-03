@@ -1,6 +1,6 @@
 import threading
 
-# 1. Race condition - global without lock
+# 1. Race condition
 user_count = 0
 
 def add_user():
@@ -17,8 +17,8 @@ def process_log(filename):
 def admin_delete(user_id):
     db.execute(f"DELETE FROM users WHERE id={user_id}")
 
-# 4. N+1 query problem
-def list_with_details():
+# 4. N+1 query problem check
+def list_with_detailsXS():
     items = db.query("SELECT * FROM items")
     for item in items:
         details = db.query(f"SELECT * FROM details WHERE item_id={item.id}")
@@ -34,7 +34,7 @@ def validate(x, y, z, a, b):
     return False
 
 # 6. Code duplication
-def save_user(name):
+def save_userX(name):
     user = User()
     user.name = name
     user.created = datetime.now()
