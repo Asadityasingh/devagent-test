@@ -158,7 +158,7 @@ def calculate():
 def get_data():
     """ISSUE: Information disclosure"""
     
-    # ISSUE 12: Sensitive data comments/response
+    # ISSUE 12: Sensitive comments/response
     api_key = "sk_live_51234567890abcdefg"  # Hardcoded API key
     db_password = "postgres_password_123"  # Hardcoded credentials
     
