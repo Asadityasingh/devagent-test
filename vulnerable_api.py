@@ -188,7 +188,7 @@ class DataProcessor:
         return data
 
 
-# Global state without synchronization
+# Global state with out synchronization
 request_counter = 0
 
 def increment_counter():
