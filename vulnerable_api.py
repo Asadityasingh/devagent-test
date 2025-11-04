@@ -166,7 +166,7 @@ def get_data():
 
 
 class DataProcessor:
-    """ISSUE: Complex function with multiple responsibilities"""
+    """ISSUE:  function with multiple responsibilities"""
     
     def process_and_validate_and_log_and_transform(self, data, source, dest, format, validate=True, log=True, transform=True):
         """ISSUE 13: God function - too many responsibilities"""
