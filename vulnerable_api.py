@@ -171,7 +171,7 @@ class DataProcessor:
     def process_and_validate_and_log_and_transform(self, data, source, dest, format, validate=True, log=True, transform=True):
         """ISSUE 13: God function - too many responsibilities"""
         
-        # 20 lines of nested logic
+        # 20 nested logic
         if validate:
             if isinstance(data, dict):
                 if 'id' in data:
