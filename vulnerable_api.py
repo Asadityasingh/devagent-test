@@ -41,7 +41,7 @@ def execute_command():
     """ISSUE: Command injection vulnerability"""
     command = request.form.get('command')
     
-    # ISSUE 2: Command injection - user input directly to shell
+    # ISSUE 2: Command - user input directly to shell
     output = subprocess.check_output(f"echo {command}", shell=True)
     
     return output
