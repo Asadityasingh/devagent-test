@@ -13,7 +13,7 @@ def process_log(filename):
     data = log.read()
     return data
 
-# 3. Auth issue - no permission check
+# 3. Auth issue - no permission deep check
 def admin_delete(user_id):
     db.execute(f"DELETE FROM users WHERE id={user_id}")
 
